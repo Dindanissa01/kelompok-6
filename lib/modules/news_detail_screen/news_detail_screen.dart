@@ -13,6 +13,7 @@ class NewsDetailScreen extends StatefulWidget {
 }
 
 class _NewsDetailScreenState extends State<NewsDetailScreen> {
+  int like = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +36,21 @@ class _NewsDetailScreenState extends State<NewsDetailScreen> {
                 widget.news.deskripsi,
                 textAlign: TextAlign.justify,
               ),
+              Row(
+                children: [
+                  IconButton(
+                      onPressed: () {
+                        setState(() {
+                          like++;
+                        });
+                      },
+                      icon: Icon(
+                        Icons.favorite,
+                        color: Colors.red,
+                      )),
+                  Text(like.toString())
+                ],
+              )
             ],
           ),
         ));

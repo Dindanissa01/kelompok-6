@@ -32,7 +32,7 @@ class User {
       name: "Kelompok 6",
       username: "kelompok6",
       email: "kelompok6@gmail.com",
-      profilePhoto: "asset/taehyung.jpg",
+      profilePhoto: "asset/lisa.jpg",
       phoneNumber: "085123456789",
     );
   }
